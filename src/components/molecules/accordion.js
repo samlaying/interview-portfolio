@@ -9,6 +9,13 @@ export function initAccordion() {
     const arrow = card.querySelector('.accordion-arrow');
     let expanded = false;
 
+    // Auto-expand on load
+    gsap.set(content, { height: 'auto' });
+    gsap.set(arrow, { rotation: 180 });
+    card.classList.add('is-open');
+    trigger.setAttribute('aria-expanded', 'true');
+    expanded = true;
+
     trigger.addEventListener('click', () => {
       if (expanded) {
         gsap.to(content, { height: 0, duration: 0.2, ease: 'power2.in' });
