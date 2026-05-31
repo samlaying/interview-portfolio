@@ -1,10 +1,7 @@
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import 'gsap/ScrollTrigger';
 
 export function initScrollAnimations() {
-  // Hero elements
   gsap.from('.hero-fade', {
     opacity: 0,
     y: 30,
@@ -13,7 +10,6 @@ export function initScrollAnimations() {
     ease: 'power2.out',
   });
 
-  // Section headings and cards
   gsap.utils.toArray('.section-fade').forEach((el) => {
     gsap.from(el, {
       scrollTrigger: {
@@ -28,7 +24,6 @@ export function initScrollAnimations() {
     });
   });
 
-  // Card accordions
   gsap.utils.toArray('.card-accordion').forEach((card) => {
     gsap.from(card, {
       scrollTrigger: {

@@ -1,10 +1,7 @@
 import gsap from 'gsap';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-
-gsap.registerPlugin(ScrollToPlugin);
+import 'gsap/ScrollToPlugin';
 
 export function initSmoothScroll() {
-  // CTA anchor links
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -19,7 +16,6 @@ export function initSmoothScroll() {
     });
   });
 
-  // Hide scroll hint on scroll
   const hint = document.getElementById('scroll-hint');
   if (hint) {
     window.addEventListener('scroll', () => {
@@ -27,18 +23,5 @@ export function initSmoothScroll() {
         gsap.to(hint, { opacity: 0, duration: 0.3, onComplete: () => hint.remove() });
       }
     }, { once: true });
-  }
-
-  // WeChat copy button
-  const wechatCopy = document.getElementById('wechat-copy');
-  if (wechatCopy) {
-    const label = wechatCopy.querySelector('.copy-label');
-    const wechatId = wechatCopy.dataset.copy;
-    wechatCopy.addEventListener('click', () => {
-      navigator.clipboard.writeText(wechatId).then(() => {
-        label.textContent = 'Copied';
-        setTimeout(() => { label.textContent = 'Copy'; }, 2000);
-      });
-    });
   }
 }

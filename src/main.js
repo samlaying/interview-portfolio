@@ -1,10 +1,14 @@
-import './styles/input.css';
-import { initAccordion } from './js/accordion.js';
-import { initScrollAnimations } from './js/scroll-anim.js';
-import { initCountUp } from './js/count-up.js';
-import { initSmoothScroll } from './js/smooth-scroll.js';
+import './utils/gsap-setup.js';
+import './assets/styles/input.css';
+
+import { initAccordion } from './components/molecules/accordion.js';
+import { initScrollAnimations } from './components/organisms/scroll-anim.js';
+import { initCountUp } from './components/atoms/count-up.js';
+import { initSmoothScroll } from './components/organisms/nav.js';
+import { initContact } from './components/organisms/contact.js';
 
 initAccordion();
 initScrollAnimations();
 initCountUp();
 initSmoothScroll();
+initContact();
