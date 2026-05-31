@@ -3,269 +3,272 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>林承列 | AI产品经理</title>
-  <meta name="description" content="AI产品经理 | 擅长用数据驱动AI商业化增长 — 字节跳动实习经历，GMV增长数百万/天" />
+  <title>林承列 | AI Product Manager</title>
+  <meta name="description" content="林承列的 AI 产品经理面试展示站，聚焦 AI 商业化、数据增长、产品策略与项目复盘。" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="林承列 | AI产品经理" />
-  <meta property="og:description" content="AI产品经理 | 擅长用数据驱动AI商业化增长" />
+  <meta property="og:title" content="林承列 | AI Product Manager" />
+  <meta property="og:description" content="AI 产品经理作品简历：字节跳动、AI 商业化、数据驱动增长。" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="zh_CN" />
+  <meta property="og:image" content="/assets/monochrome-portrait.jpg" />
 
-  <!-- Font preload -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/monochrome-portrait.jpg" />
   <link rel="stylesheet" href="/src/styles/input.css" />
 </head>
-<body class="font-sans text-gray-800 bg-white antialiased">
+<body class="font-sans bg-[#f4f1ea] text-[#101010] antialiased selection:bg-[#101010] selection:text-[#f4f1ea]">
+  <div class="pointer-events-none fixed inset-0 z-50 border-[10px] border-[#101010] mix-blend-multiply md:border-[14px]"></div>
 
-  <!-- ===================== 第一屏：Hero ===================== -->
-  <section id="hero" class="min-h-screen flex flex-col items-center justify-center px-6 text-center">
-    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 hero-fade">林承列</h1>
-    <p class="text-xl md:text-2xl text-gray-600 mb-8 hero-fade">AI产品经理 | 擅长用数据驱动AI商业化增长</p>
+  <header class="fixed left-0 right-0 top-0 z-40 flex items-start justify-between px-5 py-5 text-[11px] font-semibold uppercase leading-none md:px-8 md:py-7">
+    <a href="#hero" class="hero-fade group flex items-center gap-2">
+      <span class="grid size-7 place-items-center border border-[#101010] bg-[#101010] text-[#f4f1ea]">LC</span>
+      <span class="hidden sm:inline">AI Product Manager</span>
+    </a>
+    <nav class="hero-fade hidden items-center gap-5 md:flex">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#capability" class="nav-link">Capability</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="hero-fade nav-link text-right">Open for interviews</a>
+  </header>
 
-    <div class="flex flex-wrap justify-center gap-3 mb-10 hero-fade">
-      <span class="px-4 py-1.5 bg-blue-50 text-primary rounded-full text-sm font-medium">字节跳动</span>
-      <span class="px-4 py-1.5 bg-blue-50 text-primary rounded-full text-sm font-medium">AI商业化</span>
-      <span class="px-4 py-1.5 bg-blue-50 text-primary rounded-full text-sm font-medium">数据驱动增长</span>
-    </div>
+  <main>
+    <section id="hero" class="relative grid min-h-screen overflow-hidden px-5 pb-10 pt-28 md:grid-cols-[0.95fr_1.05fr] md:px-8 md:pb-8 md:pt-24">
+      <div class="hero-fade hidden self-end text-[11px] font-semibold uppercase leading-5 md:block">
+        <p>Based in China</p>
+        <p>Product / AI / Growth</p>
+        <p>2026 Portfolio</p>
+      </div>
 
-    <div class="flex flex-col sm:flex-row gap-4 hero-fade">
-      <a href="#experience" class="inline-block px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-blue-700 transition-all hover:-translate-y-0.5">
-        查看项目详情
-      </a>
-      <a href="#contact" class="inline-block px-8 py-3 border-2 border-primary text-primary rounded-lg font-medium hover:bg-blue-50 transition-all hover:-translate-y-0.5">
-        联系我
-      </a>
-    </div>
+      <div class="relative min-h-[520px] md:min-h-0">
+        <p class="hero-fade mb-4 max-w-[34rem] text-[15px] leading-7 text-[#343434] md:absolute md:left-0 md:top-0 md:w-[28rem]">
+          用数据、实验和产品判断推进 AI 商业化，从需求拆解到上线复盘，把复杂能力变成能增长的用户体验。
+        </p>
 
-    <div id="scroll-hint" class="absolute bottom-8 text-gray-400 text-sm animate-bounce">
-      ↓ 向下滚动了解详情
-    </div>
-  </section>
-
-  <!-- ===================== 第二屏：Experience & Projects ===================== -->
-  <section id="experience" class="max-w-5xl mx-auto px-6 py-20">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 section-fade">经历与项目</h2>
-
-    <!-- 字节跳动 -->
-    <div class="mb-8 card-accordion" data-accordion>
-      <div class="accordion-trigger cursor-pointer rounded-xl border border-gray-200 p-6 md:p-8 hover:shadow-lg transition-shadow bg-white">
-        <div class="flex items-start justify-between">
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <span class="text-2xl">🏢</span>
-              <h3 class="text-xl md:text-2xl font-bold text-gray-900">字节跳动 · 剪映</h3>
-            </div>
-            <p class="text-gray-500 mb-4">AI产品经理实习生</p>
-            <div class="flex flex-wrap gap-4 text-sm">
-              <div class="flex items-center gap-1.5">
-                <span class="text-primary font-bold text-lg" data-count-up="500">0</span>
-                <span class="text-gray-600">万+ GMV/天</span>
-              </div>
-              <div class="flex items-center gap-1.5">
-                <span class="text-primary font-bold text-lg">+</span>
-                <span class="text-primary font-bold text-lg" data-count-up="1">0</span>
-                <span class="text-gray-600">P 付费率提升</span>
-              </div>
-              <div class="flex items-center gap-1.5">
-                <span class="text-primary font-bold text-lg">-</span>
-                <span class="text-primary font-bold text-lg" data-count-up="70">0</span>
-                <span class="text-gray-600">%+ 投诉率降低</span>
-              </div>
-            </div>
+        <div class="hero-fade relative mx-auto mt-12 aspect-[4/5] w-[76vw] max-w-[420px] overflow-hidden border border-[#101010] bg-[#ebe6dc] md:absolute md:right-0 md:top-8 md:mt-0 md:w-[27vw] md:max-w-[360px]">
+          <img class="h-full w-full object-cover grayscale" src="/assets/monochrome-portrait.jpg" alt="黑白抽象人像，由产品界面、数据网格和线条构成" />
+          <div class="absolute bottom-0 left-0 right-0 flex items-center justify-between border-t border-[#101010] bg-[#f4f1ea]/90 px-3 py-2 text-[10px] font-semibold uppercase">
+            <span>AI / Data / Product</span>
+            <span>Selected Profile</span>
           </div>
-          <svg class="accordion-arrow w-6 h-6 text-gray-400 transition-transform flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
+        </div>
+
+        <div class="absolute bottom-0 left-0 right-0">
+          <div class="hero-fade hidden items-end justify-between gap-4 border-y border-[#101010] py-3 text-[11px] font-semibold uppercase md:flex">
+            <span>ByteDance</span>
+            <span>AI Commerce</span>
+            <span>Data Growth</span>
+          </div>
+          <h1 class="hero-fade relative z-10 mt-4 max-w-[780px] text-[72px] font-extrabold leading-[0.86] md:text-[120px] lg:text-[154px]">
+            林承列
+          </h1>
+          <div class="hero-fade mt-5 grid gap-3 text-[12px] font-semibold uppercase md:grid-cols-[1fr_auto] md:items-end">
+            <p class="max-w-[32rem] text-[17px] font-medium normal-case leading-7 text-[#202020]">
+              AI 产品经理，擅长把 AI 能力、付费策略和数据实验串成可验证的增长路径。
+            </p>
+            <a href="#work" class="inline-flex h-11 items-center justify-center border border-[#101010] bg-[#101010] px-5 text-[#f4f1ea] transition hover:bg-transparent hover:text-[#101010]">
+              View work
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="accordion-content overflow-hidden" style="height: 0;">
-        <div class="pt-4 px-2 space-y-8">
-          <!-- 项目1 -->
-          <div class="pl-4 border-l-4 border-primary">
-            <h4 class="text-lg font-bold text-gray-900 mb-3">AI深度Caption商业化</h4>
-            <div class="space-y-2 text-gray-600">
-              <p><span class="font-medium text-gray-800">问题：</span>剪映AI生成字幕功能用户付费意愿低，商业化路径不明确</p>
-              <p><span class="font-medium text-gray-800">方案：</span>通过数据分析识别付费瓶颈 → 设计A/B实验验证付费策略 → 迭代优化转化漏斗</p>
-              <p><span class="font-medium text-gray-800">结果：</span>GMV 每天增长数百万，付费率提升超过1个百分点，投诉率降低超70%</p>
-            </div>
-          </div>
-          <!-- 项目2 -->
-          <div class="pl-4 border-l-4 border-accent">
-            <h4 class="text-lg font-bold text-gray-900 mb-3">音色克隆功能迭代</h4>
-            <div class="space-y-2 text-gray-600">
-              <p><span class="font-medium text-gray-800">问题：</span>音色克隆功能处于早期，用户体验与商业化模型待验证</p>
-              <p><span class="font-medium text-gray-800">方案：</span>用户调研 → 功能PRD设计 → 跨团队协作推进开发 → 上线后数据监控</p>
-              <p><span class="font-medium text-gray-800">结果：</span>完成从0到1的产品全流程实践，验证了产品基本功</p>
-            </div>
-          </div>
-        </div>
+      <div id="scroll-hint" class="absolute bottom-5 right-5 text-[10px] font-semibold uppercase md:bottom-8 md:right-8">
+        Scroll
       </div>
-    </div>
+    </section>
 
-    <!-- 一起教育 -->
-    <div class="mb-8 card-accordion" data-accordion>
-      <div class="accordion-trigger cursor-pointer rounded-xl border border-gray-200 p-6 md:p-8 hover:shadow-lg transition-shadow bg-white">
-        <div class="flex items-start justify-between">
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <span class="text-2xl">🏢</span>
-              <h3 class="text-xl md:text-2xl font-bold text-gray-900">一起教育</h3>
-            </div>
-            <p class="text-gray-500 mb-4">AI产品实习生</p>
-            <div class="flex flex-wrap gap-4 text-sm">
-              <div class="flex items-center gap-1.5">
-                <span class="text-primary font-bold text-lg" data-count-up="10">0</span>
-                <span class="text-gray-600">万+ 份报告稳定交付</span>
+    <section id="work" class="px-5 py-20 md:px-8 md:py-28">
+      <div class="mb-12 grid gap-8 border-t border-[#101010] pt-5 md:grid-cols-[0.8fr_1.2fr]">
+        <p class="section-fade text-[11px] font-semibold uppercase">Selected work</p>
+        <h2 class="section-fade max-w-4xl text-4xl font-semibold leading-[1.02] md:text-6xl">
+          三个能被面试官快速追问下去的项目故事。
+        </h2>
+      </div>
+
+      <div class="space-y-0">
+        <article class="card-accordion border-t border-[#101010]" data-accordion>
+          <button class="accordion-trigger group grid w-full cursor-pointer gap-6 py-7 text-left md:grid-cols-[80px_1fr_0.7fr_32px] md:items-start" type="button" aria-expanded="false">
+            <span class="work-index">01</span>
+            <span>
+              <span class="block text-2xl font-semibold md:text-4xl">字节跳动 · 剪映</span>
+              <span class="mt-2 block text-sm leading-6 text-[#4c4c4c]">AI 产品经理实习生 / AI 深度 Caption 商业化</span>
+            </span>
+            <span class="grid grid-cols-3 gap-3 text-[11px] font-semibold uppercase md:text-right">
+              <span><strong class="block text-xl" data-count-up="500">0</strong>万+ GMV/天</span>
+              <span><strong class="block text-xl" data-count-up="1">0</strong>P+ 付费率</span>
+              <span><strong class="block text-xl" data-count-up="70">0</strong>%+ 投诉降低</span>
+            </span>
+            <span class="accordion-arrow mt-1 grid size-8 place-items-center border border-[#101010] transition-transform">↓</span>
+          </button>
+          <div class="accordion-content overflow-hidden" style="height: 0;">
+            <div class="grid gap-8 pb-10 md:grid-cols-[80px_1fr_1fr]">
+              <div></div>
+              <div class="space-y-6 text-[15px] leading-7 text-[#343434]">
+                <div>
+                  <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Problem</h3>
+                  <p>AI 生成字幕功能有真实使用需求，但用户付费意愿和商业化路径不清晰，需要从漏斗里找到能被实验验证的杠杆。</p>
+                </div>
+                <div>
+                  <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Action</h3>
+                  <p>拆解付费瓶颈，设计 A/B 实验，围绕权益感知、转化触点和投诉反馈持续迭代，推动策略上线。</p>
+                </div>
               </div>
-              <div class="flex items-center gap-1.5">
-                <span class="text-gray-600">识别成功率显著提升</span>
+              <div class="border-l border-[#101010] pl-5 text-[15px] leading-7 text-[#343434]">
+                <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Result</h3>
+                <p>GMV 每天增长数百万，付费率提升超过 1 个百分点，投诉率降低超 70%。另推进音色克隆功能从 0 到 1，完整经历 PRD、协作、上线和数据监控。</p>
               </div>
             </div>
           </div>
-          <svg class="accordion-arrow w-6 h-6 text-gray-400 transition-transform flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
-      </div>
+        </article>
 
-      <div class="accordion-content overflow-hidden" style="height: 0;">
-        <div class="pt-4 px-2">
-          <div class="pl-4 border-l-4 border-primary">
-            <h4 class="text-lg font-bold text-gray-900 mb-3">LLM选型 + 数据看板建设</h4>
-            <div class="space-y-2 text-gray-600">
-              <p><span class="font-medium text-gray-800">问题：</span>教育场景下大量试卷/作业需要自动化处理，LLM选型和成本控制是核心挑战</p>
-              <p><span class="font-medium text-gray-800">方案：</span>瓶颈识别 → LLM技术选型对比 → 成本评估体系搭建 → 数据看板建设</p>
-              <p><span class="font-medium text-gray-800">结果：</span>10万+份报告稳定交付，识别成功率提升，建立可复用的数据基建</p>
+        <article class="card-accordion border-t border-[#101010]" data-accordion>
+          <button class="accordion-trigger group grid w-full cursor-pointer gap-6 py-7 text-left md:grid-cols-[80px_1fr_0.7fr_32px] md:items-start" type="button" aria-expanded="false">
+            <span class="work-index">02</span>
+            <span>
+              <span class="block text-2xl font-semibold md:text-4xl">一起教育</span>
+              <span class="mt-2 block text-sm leading-6 text-[#4c4c4c]">AI 产品实习生 / LLM 选型与数据看板</span>
+            </span>
+            <span class="grid grid-cols-2 gap-3 text-[11px] font-semibold uppercase md:text-right">
+              <span><strong class="block text-xl" data-count-up="10">0</strong>万+ 报告</span>
+              <span><strong class="block text-xl">↑</strong>识别成功率</span>
+            </span>
+            <span class="accordion-arrow mt-1 grid size-8 place-items-center border border-[#101010] transition-transform">↓</span>
+          </button>
+          <div class="accordion-content overflow-hidden" style="height: 0;">
+            <div class="grid gap-8 pb-10 md:grid-cols-[80px_1fr_1fr]">
+              <div></div>
+              <div class="space-y-6 text-[15px] leading-7 text-[#343434]">
+                <div>
+                  <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Problem</h3>
+                  <p>教育场景下有大量试卷和报告自动化处理需求，模型效果、成本控制、稳定交付都需要被产品化管理。</p>
+                </div>
+                <div>
+                  <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Action</h3>
+                  <p>识别流程瓶颈，对比 LLM 技术选型，搭建成本评估体系和数据看板，让交付效果可以持续追踪。</p>
+                </div>
+              </div>
+              <div class="border-l border-[#101010] pl-5 text-[15px] leading-7 text-[#343434]">
+                <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Result</h3>
+                <p>支持 10 万+ 份报告稳定交付，识别成功率显著提升，并沉淀出后续项目可复用的数据基建。</p>
+              </div>
             </div>
+          </div>
+        </article>
+
+        <article class="card-accordion border-y border-[#101010]" data-accordion>
+          <button class="accordion-trigger group grid w-full cursor-pointer gap-6 py-7 text-left md:grid-cols-[80px_1fr_0.7fr_32px] md:items-start" type="button" aria-expanded="false">
+            <span class="work-index">03</span>
+            <span>
+              <span class="block text-2xl font-semibold md:text-4xl">一日活动规划</span>
+              <span class="mt-2 block text-sm leading-6 text-[#4c4c4c]">AI Agent 架构 / Vibe Coding / 评测体系</span>
+            </span>
+            <span class="text-[11px] font-semibold uppercase md:text-right">
+              <strong class="block text-xl">State machine</strong>
+              LLM hybrid flow
+            </span>
+            <span class="accordion-arrow mt-1 grid size-8 place-items-center border border-[#101010] transition-transform">↓</span>
+          </button>
+          <div class="accordion-content overflow-hidden" style="height: 0;">
+            <div class="grid gap-8 pb-10 md:grid-cols-[80px_1fr_1fr]">
+              <div></div>
+              <div class="space-y-6 text-[15px] leading-7 text-[#343434]">
+                <div>
+                  <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Problem</h3>
+                  <p>日常活动规划依赖人工，效率低且个性化不足，需要把用户偏好、约束条件和生成策略组织成可靠流程。</p>
+                </div>
+                <div>
+                  <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Action</h3>
+                  <p>设计状态机 + LLM 混合驱动架构，用 Vibe Coding 快速实现，并建立基础评测体系验证输出质量。</p>
+                </div>
+              </div>
+              <div class="border-l border-[#101010] pl-5 text-[15px] leading-7 text-[#343434]">
+                <h3 class="mb-2 text-sm font-bold uppercase text-[#101010]">Result</h3>
+                <p>验证了独立构建 AI 产品的完整链路能力，覆盖架构决策、快速实现、效果评估和产品表达。</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="capability" class="px-5 py-20 md:px-8 md:py-28">
+      <div class="grid gap-8 border-t border-[#101010] pt-5 md:grid-cols-[0.8fr_1.2fr]">
+        <p class="section-fade text-[11px] font-semibold uppercase">Capability map</p>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="section-fade border-t border-[#101010] pt-4 md:border-t-0 md:pt-0">
+            <h2 class="mb-6 text-2xl font-semibold">AI 产品</h2>
+            <ul class="space-y-3 text-[15px] leading-7 text-[#343434]">
+              <li>Prompt 工程</li>
+              <li>LLM 应用架构</li>
+              <li>AI 商业化策略</li>
+              <li>模型效果评估</li>
+            </ul>
+          </div>
+          <div class="section-fade border-t border-[#101010] pt-4 md:border-t-0 md:pt-0">
+            <h2 class="mb-6 text-2xl font-semibold">数据增长</h2>
+            <ul class="space-y-3 text-[15px] leading-7 text-[#343434]">
+              <li>A/B 实验设计</li>
+              <li>SQL 数据分析</li>
+              <li>漏斗拆解</li>
+              <li>数据看板搭建</li>
+            </ul>
+          </div>
+          <div class="section-fade border-t border-[#101010] pt-4 md:border-t-0 md:pt-0">
+            <h2 class="mb-6 text-2xl font-semibold">产品基本功</h2>
+            <ul class="space-y-3 text-[15px] leading-7 text-[#343434]">
+              <li>需求分析</li>
+              <li>PRD 撰写</li>
+              <li>用户调研</li>
+              <li>跨团队协作</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 个人项目 -->
-    <div class="card-accordion" data-accordion>
-      <div class="accordion-trigger cursor-pointer rounded-xl border border-gray-200 p-6 md:p-8 hover:shadow-lg transition-shadow bg-white">
-        <div class="flex items-start justify-between">
-          <div class="flex-1">
-            <div class="flex items-center gap-3 mb-2">
-              <span class="text-2xl">🛠️</span>
-              <h3 class="text-xl md:text-2xl font-bold text-gray-900">个人项目 · 一日活动规划</h3>
-            </div>
-            <p class="text-gray-500 mb-4">AI Agent 架构 + Vibe Coding</p>
-            <div class="flex flex-wrap gap-4 text-sm">
-              <span class="text-gray-600">状态机 + LLM 混合驱动架构</span>
-            </div>
+      <div class="section-fade mt-16 border-y border-[#101010] py-5">
+        <div class="marquee text-[11px] font-semibold uppercase">
+          <span>Claude Code · Cursor · Figma · Dify · Coze · n8n · Python · SQL · A/B Testing · MVP Testing · Product Strategy · Growth Experiment ·</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-5 pb-16 pt-20 md:px-8 md:pb-20 md:pt-28">
+      <div class="grid min-h-[72vh] gap-12 border-t border-[#101010] pt-5 md:grid-cols-[0.85fr_1.15fr]">
+        <div class="section-fade">
+          <p class="mb-8 text-[11px] font-semibold uppercase">About / Contact</p>
+          <p class="max-w-md text-[15px] leading-7 text-[#343434]">
+            天津师范大学经济学，专业排名前 10%。目前关注 AI 产品商业化、数据驱动增长和 Agent 产品形态。
+          </p>
+        </div>
+
+        <div class="section-fade self-end">
+          <h2 class="mb-8 text-5xl font-semibold leading-[0.95] md:text-7xl">Let’s talk.</h2>
+          <div class="divide-y divide-[#101010] border-y border-[#101010]">
+            <a class="contact-row" href="mailto:16629076367@163.com">
+              <span>Email</span>
+              <span>16629076367@163.com</span>
+            </a>
+            <button class="contact-row w-full text-left" id="wechat-copy" data-copy="15396631779" type="button">
+              <span>WeChat</span>
+              <span><span class="copy-value">15396631779</span> <span class="copy-label text-[#666]">Copy</span></span>
+            </button>
+            <a class="contact-row" href="tel:16629076367">
+              <span>Phone</span>
+              <span>16629076367</span>
+            </a>
           </div>
-          <svg class="accordion-arrow w-6 h-6 text-gray-400 transition-transform flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-          </svg>
         </div>
       </div>
 
-      <div class="accordion-content overflow-hidden" style="height: 0;">
-        <div class="pt-4 px-2">
-          <div class="pl-4 border-l-4 border-accent">
-            <h4 class="text-lg font-bold text-gray-900 mb-3">AI Agent 独立构建</h4>
-            <div class="space-y-2 text-gray-600">
-              <p><span class="font-medium text-gray-800">问题：</span>日常活动规划依赖人工，效率低且难以个性化</p>
-              <p><span class="font-medium text-gray-800">方案：</span>设计状态机+LLM混合驱动架构 → 用Vibe Coding快速实现 → 搭建评测体系验证效果</p>
-              <p><span class="font-medium text-gray-800">结果：</span>证明独立构建AI产品的完整能力，涵盖架构决策、快速实现、质量验证</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== 第三屏：Skills ===================== -->
-  <section id="skills" class="max-w-5xl mx-auto px-6 py-20">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16 section-fade">能力图谱</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-      <!-- AI产品能力 -->
-      <div class="rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow section-fade">
-        <h3 class="text-lg font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">AI产品能力</h3>
-        <ul class="space-y-2.5 text-gray-600">
-          <li>Prompt工程</li>
-          <li>LLM应用架构</li>
-          <li>AI商业化策略</li>
-        </ul>
-        <div class="mt-4 pt-3 border-t border-gray-100 flex flex-wrap gap-2">
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">Claude Code</span>
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">Cursor</span>
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">Dify</span>
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">Coze</span>
-        </div>
-      </div>
-
-      <!-- 数据分析能力 -->
-      <div class="rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow section-fade">
-        <h3 class="text-lg font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">数据分析能力</h3>
-        <ul class="space-y-2.5 text-gray-600">
-          <li>A/B实验设计</li>
-          <li>SQL数据分析</li>
-          <li>数据看板搭建</li>
-        </ul>
-        <div class="mt-4 pt-3 border-t border-gray-100 flex flex-wrap gap-2">
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">SQL</span>
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">Python</span>
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">数据平台</span>
-        </div>
-      </div>
-
-      <!-- 产品基本功 -->
-      <div class="rounded-xl border border-gray-200 p-6 hover:shadow-lg transition-shadow section-fade md:col-span-2 lg:col-span-1">
-        <h3 class="text-lg font-bold text-gray-900 mb-4 pb-3 border-b border-gray-100">产品基本功</h3>
-        <ul class="space-y-2.5 text-gray-600">
-          <li>需求分析</li>
-          <li>PRD撰写</li>
-          <li>用户调研</li>
-          <li>跨团队协作</li>
-        </ul>
-        <div class="mt-4 pt-3 border-t border-gray-100 flex flex-wrap gap-2">
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">Figma</span>
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">n8n</span>
-          <span class="px-2.5 py-1 bg-blue-50 text-primary text-xs rounded-full">MVP测试</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== 第四屏：About & Contact ===================== -->
-  <section id="contact" class="max-w-3xl mx-auto px-6 py-20 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 section-fade">关于我</h2>
-
-    <div class="mb-12 section-fade">
-      <p class="text-gray-600 text-lg mb-2">天津师范大学 · 经济学</p>
-      <p class="text-primary font-medium">专业排名前 10%</p>
-    </div>
-
-    <h3 class="text-2xl font-bold text-gray-900 mb-8 section-fade">联系方式</h3>
-    <div class="space-y-4 section-fade">
-      <a href="mailto:16629076367@163.com" class="flex items-center justify-center gap-3 text-gray-600 hover:text-primary transition-colors">
-        <span>📧</span>
-        <span>16629076367@163.com</span>
-      </a>
-      <div class="flex items-center justify-center gap-3 text-gray-600" id="wechat-copy" data-copy="15396631779">
-        <span>📱</span>
-        <span>微信：15396631779</span>
-        <button class="text-xs text-primary hover:underline ml-1" aria-label="复制微信号">复制</button>
-      </div>
-      <a href="tel:16629076367" class="flex items-center justify-center gap-3 text-gray-600 hover:text-primary transition-colors">
-        <span>📞</span>
-        <span>16629076367</span>
-      </a>
-    </div>
-
-    <footer class="mt-20 pt-8 border-t border-gray-200 text-sm text-gray-400">
-      &copy; 2026 林承列
-    </footer>
-  </section>
+      <footer class="mt-16 flex items-center justify-between border-t border-[#101010] pt-5 text-[11px] font-semibold uppercase">
+        <span>林承列</span>
+        <span>Portfolio 2026</span>
+      </footer>
+    </section>
+  </main>
 
   <script type="module" src="/src/main.js"></script>
 </body>

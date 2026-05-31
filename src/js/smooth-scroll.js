@@ -32,12 +32,12 @@ export function initSmoothScroll() {
   // WeChat copy button
   const wechatCopy = document.getElementById('wechat-copy');
   if (wechatCopy) {
-    const btn = wechatCopy.querySelector('button');
+    const label = wechatCopy.querySelector('.copy-label');
     const wechatId = wechatCopy.dataset.copy;
-    btn.addEventListener('click', () => {
+    wechatCopy.addEventListener('click', () => {
       navigator.clipboard.writeText(wechatId).then(() => {
-        btn.textContent = '已复制';
-        setTimeout(() => { btn.textContent = '复制'; }, 2000);
+        label.textContent = 'Copied';
+        setTimeout(() => { label.textContent = 'Copy'; }, 2000);
       });
     });
   }
